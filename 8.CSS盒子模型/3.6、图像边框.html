@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>图像边框</title>
+    <style type="text/css">
+        p{
+            width:362px; 
+            height:362px;
+            border-style:solid;
+            border-image-source:url(../images/4.png);   /*设置边框图片路径*/
+            border-image-slice:20%;           /*边框图像顶部、右侧、底部、左侧向内偏移量*/
+            border-image-width:40px;          /*设置边框宽度*/
+            border-image-outset:0;		      /*设置边框图像区域超出边框量*/
+            border-image-repeat:stretch;	      /*设置图片平铺方式*/
+        }
+    </style>
+</head>
+<body>
+    <!-- border-image: border-image-source border-image-slice/border-image-width/border-image-outset border-image-repeat;
+    border-image属性是一个复合属性，其相关属性如下：
+    border-image-source：用于指定图像的路径，常用属性值URL
+    border-image-slice：用于指定边框图像顶部、右侧、底部、左侧的内向偏移量（可以理解为图像的裁切位置），常用单位百分比
+    border-image-width：用于指定边框宽度，常用单位像素值
+    border-image-outset:用于指定边框图像向盒子外部延伸的距离（可以理解为边框图像与边框的距离），常用值为数字
+    border-image-repeat：用于指定图像的平铺方式，repeat（平铺）、stretch（拉伸） -->
+    <p></p>
+</body>
+</html>
+    
+    
+    
+    

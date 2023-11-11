@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p {
+            color: red;
+        }
+
+        .blue {
+            color: green;
+        }
+
+        #header {
+            color: blue;
+        }
+       </style>
+</head>
+
+<body>
+    <!-- 1、多个样式应用在同一标签上，css会根据样式的权重优先显示权重最大的样式。优先级：地址选择器>类选择器>标签选择器 -->
+    <p id="header" class="blue">我是谁，我在哪里</p>
+</body>
+
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>绝对定位</title>
+<style type="text/css">
+body{ margin:0px; padding:0px; font-size:18px; font-weight:bold;}
+.father{
+	margin:10px auto;
+	width:300px;
+	height:300px;
+	padding:10px;
+	background:#ccc;
+	border:1px solid #000;
+}
+.child01,.child02,.child03{
+	width:100px;
+	height:50px;
+	line-height:50px;
+	background:#ff0;
+	border:1px solid #000;
+	margin:10px 0px;
+	text-align:center;
+}
+.child02{
+	position:relative;         /*相对定位*/
+	left:150px;                 /*距左边线150px*/
+	top:100px;                  /*距顶部边线100px*/
+}
+
+</style>
+</head>
+<body>
+    <!-- 当position属性的取值为relative时，可以将标签相对定位。对标签设置相对定位后，我们可以通过边偏移属性改变标签的位置
+    ，但是它在文档流中的位置仍然保留。 -->
+
+<div class="father">
+	<div class="child01">child-01</div>
+	<div class="child02">child-02</div>
+    <div class="child03">child-03</div>
+</div>
+</body>
+</html>
+
+

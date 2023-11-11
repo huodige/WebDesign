@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>图标字体：显示的一种图标</title>
+    <!-- 第一种方法：在线引用 -->
+    <link rel="stylesheet" href="http://at.alicdn.com/t/c/font_4316245_jwvmlbcqf78.css" type="text/css">
+    <style>
+   
+
+     /* 第一步：使用font-face声明字体， */
+     /* @font-face {
+            font-family: 'iconfont'; 
+            src: url('//at.alicdn.com/t/c/font_4316245_jwvmlbcqf78.woff2?t=1699108615441') format('woff2'),
+                url('//at.alicdn.com/t/c/font_4316245_jwvmlbcqf78.woff?t=1699108615441') format('woff'),
+                url('//at.alicdn.com/t/c/font_4316245_jwvmlbcqf78.ttf?t=1699108615441') format('truetype');
+        } */
+        /* 第二步：定义使用iconfont的样式 */
+        .iconfont {
+            font-family: "iconfont" !important;
+            font-size: 25px;
+            font-style: italic;
+            -webkit-font-smoothing: antialiased;/*字体清除锯齿效果*/
+            -moz-osx-font-smoothing: grayscale; /* 字体显得更加平滑和清晰 */
+           
+        }
+        /* .icon-shangchuan:before {
+            content: "\e64d";
+        } */
+
+/*图标颜色变为粉色*/
+        /* span {
+            
+            color: pink;
+        } */
+    </style>
+
+</head>
+
+<body>
+    <!-- 参考文档：https://blog.csdn.net/weixin_42771853/article/details/128386825 -->
+    <!-- 1.下载图标（阿里巴巴图标库）： https://www.iconfont.cn/-->
+
+    <!-- 引入各图标，iconfont为图标字体类名，必写-->
+    <span class="iconfont icon-shangchuan"></span>
+    <!-- Unicode:转义字符引用  -->
+    <span class="iconfont">&#xe64d;</span>
+
+
+</body>
+
+</html>

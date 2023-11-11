@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        p strong {
+            color: black;
+        }
+
+        /* 权重为：1+1 */
+
+        strong .blue {
+            color: green;
+        }
+
+        /*权重为：1+10*/
+        .father strong {
+            color: yellow;
+        }
+
+        /*权重为：10+1*/
+        p.father strong {
+            color: orange;
+        }
+
+        /*权重为：1+10+1*/
+        p.father .blue {
+            color: gold;
+        }
+
+        /*权重为：1+10+10*/
+        #header1 strong {
+            color: pink;
+        }
+
+        /*权重为：100+1*/
+        #header1 strong.blue {
+            color: red;
+        }
+
+        /*权重为：100+1+10*/
+
+
+    </style>
+
+</head>
+
+<body>
+    <!-- 2、多个选择器构成的复合选择器，其权重可以理解为基础选择器权重的叠加，假设标签选择器的权重为1，类选择器的权重为10，id选择器权重为100 -->
+    <p class="father" id="header1">
+        <strong class="blue">文本的颜色</strong>
+    </p>
+</body>
+
+</html>

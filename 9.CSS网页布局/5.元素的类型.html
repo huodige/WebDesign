@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>块元素和行内元素</title>
+<style type="text/css"> 
+h2{                           /*定义h2的背景颜色、宽度、高度、文本水平对齐方式*/
+	background:#FCC;
+	width:350px;
+	height:50px;
+	text-align:center;
+}
+p{background:#090;}         /*定义p的背景颜色*/
+strong{                       /*定义strong的背景颜色、宽度、高度、文本水平对齐方式*/
+	background:#FCC;
+	width:350px;
+	height:50px;
+	text-align:center;
+}
+em{background:#FF0;}       /*定义em的背景颜色*/
+del{background:#CCC;}      /*定义del的背景颜色*/
+</style>
+</head>
+<body>
+
+元素的为了使页面结构的组织更加轻松、合理，HTML标签被定义成了不同的类型，一般分为块元素和行内元素。
+块元素：
+在页面中以区域块的形式出现。
+每个块元素通常都会独自占据一整行或多整行。
+可以对其设置宽度、高度、对齐等属性。
+常见的块元素有div、h1~h6、p、ul、ol、li等
+行内元素：
+不占有独立的区域。
+仅仅靠自身的字体大小和图像尺寸来支撑结构。
+一般不可以设置宽度、高度、对齐等属性。
+常见的行内元素有strong、b、em、i、del、u、a、span等
+
+行内元素可以嵌套在块元素中，行内元素会在块元素上占据一定的区域，成为块元素的一部分。
+反之，块元素不可以嵌套在行内元素中。
+
+注意：
+img和input是两个特殊的行内元素，，可以对它们设置宽高和对齐属性，有些资料可能会称它们为行内块元素。
+
+
+
+	<h2>h2元素定义的文本。</h2>
+	<p>
+		<strong>strong元素定义的文本。</strong>
+		<em>em元素定义的文本。</em>
+		<del>del元素定义的文本。</del>
+	</p>
+</body>
+</html>
+
+
+

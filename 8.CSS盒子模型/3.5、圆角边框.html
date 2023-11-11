@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>圆角边框</title>
+    <style type="text/css">
+        img{
+            border:8px solid #75406a;
+            border-radius:50px;  /*设置水平半径为100像素，垂直半径为50像素*/
+        }
+        img{border-radius:50px 20px/30px 60px;}   /*左上、右下圆角的水平半径为50px、垂直半径为30px，右上、左下的水平半径为20px、垂直半径*/
+        img{border-radius:50px 20px 10px/30px 40px 60px;} 
+        img{border-radius:50px 30px 20px 10px/50px 30px 20px 10px;}
+        /* img{border-radius:50%;}   */
+    </style>
+</head>
+<body>
+    <!-- border-radius:参数1/参数2
+    参数1表示圆角的水平半径，参数2表示圆角的垂直半径，两个参数用“/”分割
+    如果第2个参数值省略，则其默认等于第1个参数值。
+    border-radius属性同样遵循值复制的原则，其水平半径（参数1）和垂直半径（参数2）均可以设置1~4个参数值，用来表示圆角半径的大小。
+    当设置1个参数值时，表示4个圆角半径。
+    当设置2个参数值时，第1个参数值代表左上和右下圆角半径，第2个参数值代表右上和左下圆角半径
+    当设置3个参数值时，第1个参数值代表左上圆角半径，第2个参数值代表右上和左下圆角半径，第3个参数值代表右下圆角半径
+    当设置4个参数值时，第1个参数值代表左上圆角半径，第2个参数值代表右上圆角半径，第3个参数值代表右下圆角半径，第4个参数值代表左下圆角半径 -->
+    <img class="yuanjiao" src="../images/tupian1.jpg" alt="圆角边框" />
+</body>
+</html>
+    
+    
+    
+    

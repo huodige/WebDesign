@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="../css/style_blue.css" type="text/css" />
+    <style>
+        p {
+            color: blueviolet !important;
+        }
+
+        #header4 {
+            color: gray;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 5、"!important"命令的标签会被赋予最高的优先级，此命令必须位于属性值和英文分号之间，否则无效 -->
+    <p id="header4">!important在此，其他都回避</p>
+    <!-- 
+        1)当多个CSS样式应用到同一元素发生冲突时，浏览器遵循以下原则来解决CSS冲突:1）先看权重，权重大的优先级高。
+        2)权重相同时，遵循就近原则。
+        3)!important命令具有最高的优先级。(!important命令必须写在属性值和分号之间，否则无效。)
+     -->
+</body>
+
+</html>

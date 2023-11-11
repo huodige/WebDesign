@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>id选择器</title>
+    <style type="text/css">
+        #bold {
+            font-weight: bold;
+        }
+
+        #font24 {
+            font-size: 24px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 标签选择器 指定类型的所有标签都有效 -->
+    <!-- 通配符选择器：* 是作用范围最广的选择器，且能用于匹配页面中的所有标签 -->
+    <!-- id选择器 #id 标签的id是唯一的，js调用时会报错，一个标签不能定义多个id值 -->
+    <p id="bold">段落1：id="bold"，设置粗体文字。</p>
+    <p id="font24">段落2：id="font24"，设置字号为24px。</p>
+    <p id="font24">段落3：id="font24"，设置字号为24px。</p>
+    <p id="bold font24">段落4：id="bold font24"，同时设置粗体和字号24px。</p>
+</body>
+
+</html>

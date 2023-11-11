@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>box-shadow属性</title>
+    <style type="text/css">
+    img{
+        padding:20px;
+        border-radius:50%;
+        border:1px solid #ccc;
+        box-shadow:5px 5px 10px 2px #999 inset,-5px -5px 10px 2px #333 inset;
+    }
+    </style>
+</head>
+<body>
+    运用box-shadow属性可以直接为页面模块添加阴影效果。
+    box-shadow:像素值1 像素值2 像素值3 像素值4 颜色值 阴影类型;
+    参数值：
+    像素值1：表示元素水平阴影位置，可以为负值，是必选属性值
+    像素值2：表示元素垂直阴影位置，可以为负值，是必选属性值
+    像素值3：阴影模糊半径，是可选属性值
+    像素值4：阴影扩展半径，不能为负值，是可选属性值
+    颜色值：阴影颜色，是可选属性值
+    阴影类型：内阴影（inset）/外阴影（outset，默认），是可选属性值
+    为图片添加内阴影效果时，需要为图片添加内边距属性，否则内阴影效果将被图片遮盖
+    
+    <img class="border" src="../images/tupian3.png" alt="爱岗敬业" />
+</body>
+</html>

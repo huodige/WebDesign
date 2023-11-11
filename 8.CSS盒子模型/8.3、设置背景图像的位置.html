@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>设置背景图像的位置</title>
+    <style type="text/css">
+body{
+	background-image:url(../images/ai.png);     /*设置网页的背景图像*/
+	background-repeat:no-repeat;      /*设置背景图像不平铺*/
+    /* 用像素值控制背景图像的位置  */
+    /* background-position:50px 80px; */
+    /* background-position:right bottom; */
+    background-position:100% 100%;
+    /* 设置背景图像的位置固定 */
+    background-attachment: fixed;
+}
+
+
+    </style>
+</head>
+<body>
+    设置背景图像位置
+    如果想要自由控制背景图像的位置，可以使用CSS中的background-position属性。
+    background-position:属性值1 属性值2;
+    background-position属性的属性值可以设置1~2个，中间用空格隔开。当设置两个属性值时，“属性值1”表示背景图像水平位置，
+    “属性值2”表示背景图像垂直位置。如果只设置一个属性值，表示背景图像垂直位置和水平位置一致。
+    （1）使用不同单位的数值:
+    最常用的是像素值，可以使用像素值直接设置图像左上角在元素中的水平坐标和垂直坐标
+    （2）使用方位名词
+    水平方向值：left、center、right
+    垂直方向值：top、center、bottom
+    （3）使用百分比
+    0% 0%：图像左上角与元素的左上角对齐
+    50% 50% ：表示图像50% 50%中心点与元素50% 50%的中心点对齐
+    20% 30%：表示图像20% 30%的点与元素20% 30%的点对齐
+    100% 100%：表示图像右下角与元素的右下角对齐
+    
+
+    设置背景图像固定
+    当网页中的内容较多时，背景图像会随着页面滚动条的移动而移动，如果希望背景图像固定在浏览器窗口的某个位置，就可以使用background-attachment属性。
+    scroll：图像随页面一起滚动（默认值）
+    fixed：图像固定在屏幕上，不随页面滚动
+    
+
+    <h2>爱岗敬业，乐于奉献</h2>
+    <p> 当我们把爱岗敬业当作人生追求，我们就会在工作上少一些计较、多一些奉献，少一些抱怨、多一些责任感，少一些懒惰、多一些上进心，
+        就能够享受工作给自己带来的快乐和充实感，就能够更加珍惜自己的工作，抱着感恩、努力的态度把工作做得尽善尽美，最终赢得大家的尊重和认可。</p>
+</body>
+</html>
+    
+    
+    
+    
+    
+    

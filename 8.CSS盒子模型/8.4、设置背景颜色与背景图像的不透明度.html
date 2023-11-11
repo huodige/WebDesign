@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>设置不透明度</title>
+    <style type="text/css">
+    #boxwrap{width:330px; margin:10px auto; border:solid 1px #FF6666;}
+    img:first-child{opacity:1;}
+    img:nth-child(2){opacity:0.8;}
+    img:nth-child(3){opacity:0.5;}
+    img:nth-child(4){opacity:0.2;}
+    #boxcolor{
+        width: 300px;
+        height: 300px;
+        margin:10px auto;
+        border:solid 1px #1122ff;
+        background-color:  rgba(255,0,0,0.5);
+    }
+    </style>
+</head>
+<body>
+
+    在网页设计中，通过RGBA模式和opacity属性都可以更改不透明度效果。
+    1、RGBA模式
+    RGBA模式是在红、绿、蓝三原色的基础上添加了不透明度参数。只能设置背景颜色的不透明度效果，不能设置背景图像的不透明度效果。
+    语法格式：rgba(r,g,b,alpha);
+    r、g、b与RGB中的参数含义相同，alpha是一个介于0.0（完全透明）和1.0（完全不透明）之间的数字。
+    2、opacity属性
+    opacity：opacityValue;
+    语法格式：opacity：opacityValue;
+    opacity属性用于定义元素的不透明度，参数opacityValue表示不透明度的数值，该数值是一个介于0~1之间的浮点数值。其中，0表示完全透明，1表示完全不透明，其余数值则表示半透明。
+
+    <div id="boxwrap">
+        <img src="../images/hong.png" width="160" >
+        <img src="../images/hong.png" width="160" >
+        <img src="../images/hong.png" width="160" >
+        <img src="../images/hong.png" width="160" >
+    </div>
+    <div id="boxcolor">
+    </div>
+</body>
+</html>
+    
+    
+    
+    
+    
+    

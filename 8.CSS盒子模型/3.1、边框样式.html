@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>设置边框样式</title>
+    <style type="text/css">
+        h2{border-style:double;}                  /*4条边框相同均为双实线*/
+        .one{border-style:dotted solid;}		  /*上下边框为点线，左右边框为单实线*/
+        .two{border-style:solid dotted dashed;}   /*上边框为实线、左右边框为点线、下边框为虚线*/
+       /*上边框为实线、右边框为点线、下边框为虚线、左边框为点线*/
+       /* .two{border-style:solid dotted dashed dotted;} */
+    </style>
+</head>
+<body>
+    <!-- border-style:上边 [右边 下边 左边]
+    设置1个属性值：代表4条边的样式。
+    设置2个属性值：第1个属性值代表上边和下边的样式，第2个属性值代表左边和右边的样式
+    设置3个属性值：第1个属性值代表上边的属性值，第2个属性值代表左边和右边的样式，第3个属性值代表下边的样式。 -->
+    <h2>《已亥杂诗》</h2>
+    <p class="one">段落1：浩荡离愁白日斜，吟鞭东指即天涯。</p>
+    <p class="two">段落2：落红不是无情物，化作春泥更护花。</p>
+</body>
+</html>
+    
+    

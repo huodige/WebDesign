@@ -1,0 +1,73 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>hi</title>
+</head>
+
+<body>
+    <!--无序列表ul(unorderlist)   各个列表项之间没有顺序级别之分
+每个ul至少包括一个li标签，ul和li标签都拥有type属性，用于指定列表项目符号，列表项目符号位于列表前的符号。
+type：disc(默认值)、circle、square
+      -->
+    <!--有序标签 ol(orderlist)各个列表按照一定的顺序排列。 
+type可取1、a或A、i或I
+start:数字，用于指定全部项目符号的起始值
+value:数字，用于指定全部项目符号的起始值
+reversed:可省略，用于指定列表项的排列顺序为降序
+       -->
+    <ul type="square">
+        <li>javascript</li>
+        <li>html</li>
+        <li>css</li>
+    </ul>
+    <ol type="i" start="2">
+        <li>javascript</li>
+        <li>html</li>
+        <li>css</li>
+    </ol>
+    <ol start="2" reversed>
+        <li>国家</li>
+        <li value="9">民族</li>
+        <li>家庭</li>
+        <li>个人</li>
+    </ol>
+    <ul>
+        <li>咖啡
+            <ol>
+                <li>
+                    拿铁
+                </li>
+                <li>
+                    摩卡
+                </li>
+            </ol>
+
+        </li>
+        <li>茶
+            <ul>
+                <li>
+                    碧螺春
+                </li>
+                <li>
+                    龙井
+                </li>
+            </ul>
+        </li>
+    </ul>
+    <!-- 定义列表常用于对名词进行解释和描述，列表前没有任何列表项目符号 
+    dl、dt、dd之间不允许出现其他标签
+    dl标签必须与dt标签相邻
+    -->
+    <dl>
+        <dt>名词1</dt>
+        <dd>名词1解释说明1</dd>
+        <dd>名词1解释说明2</dd>
+        <dt>名词2</dt>
+        <dd>名词2解释说明1</dd>
+        <dd>名词2解释说明2</dd>
+    </dl>
+
+</body>
+
+</html>

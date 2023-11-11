@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- 结构标签主要包括：<header>标签、<nav>标签、<footer>标签、<article>标签、<section>标签、<aside>标签等
+    1、header标签具有引导作用，可以包含所有位于页面头部的内容，也可以放置整个页面或者页面中某个内容块的标题，还可以包含Logo图像、表单或者其他相关内容。
+    2、nav标签定义导航连接，一个页面中可以包含多个nav标签，以作为页面整体或页面中不同内容块的导航。nav可以设置 传统导航条、侧边栏导航、页内导航、
+    翻页导航等，并不是所有链接都要放进nav标签中，主要导航链接放进nav标签中即可。    
+    3、footer标签用于定义一个页面或者页面中某部分的底部内容。一个页面中也可以包含多个footer标签，也可以在article或者section标签中添加footer标签。
+    4、article标签用于定义文件﹑页面或者应用程序中与上下文不相关的独立部分，该元素经常被用于定义一篇日志、
+    一条新闻或用户评论等。article标签通常有自己的标题和脚注，article元素通常使用多个section元素进行划分，一个页面中 article元素可以出现多次。
+    5、section标签用于定义一段专题内容，一般有自己的标题。
+    如果使用article、aside、nav标签更合适，则无须使用section标签;
+    没有标题的内容不要使用section标签
+    section和article标签可以相互嵌套，没有上下级关系。section可以包含article标签，article也可以包含section标签
+    6、aside标签用来定义当前页面或者页面中主要内容的附属信息部分。可以包含当前页面或页面中主要内容相关的引用、侧边栏、广告、导航条等有别于主要内容的部分。
+    aside标签包含在article内，用于定义主要内容的附属信息部分。
+    aside标签在article标签之外使用，用于定义页面或者网站的附属信息部分，其常见的形式是侧边栏。
+    -->
+    <header>
+        <h1>公司信息</h1>
+        <nav>
+            <ul>
+                <li><a href="#">首页</l>
+                <li><a href="#">公司概况<川li>
+                <li><a href="#">产品展示</li>
+                <li><a href="#">联系我们<i>
+            </ul>
+        </nav>
+        <!-- 注意:一个网页中可以使用多个header元素，也可以为每一个内容块添加header元素。 -->
+
+    </header>
+
+
+    <article>
+        <header>
+            <h2>第一章</h2>
+        </header>
+        <section>
+            <header>
+                <h2>第1节</h2>
+            </header>
+        </section>
+        <section>
+            <header>
+                <h2>第2节</h2>
+            </header>
+        </section>
+    </article>
+    <article>
+        <header>
+            <h2>第二章</h2>
+        </header>
+    </article>
+
+    <article>
+        <header>
+            <h1>标题</h1>
+        </header>
+        <section>文章主要内容</section>
+        <aside>其他相关文章</aside>
+    </article>
+    <aside>右侧菜单</aside>
+    <article>
+        <header>
+            <h2>小张的个人介绍</h2>
+        </header>
+        <p>小张是一个好学生，是一个帅哥……</p>
+        <section>
+            <h2>评论</h2>
+            <article>
+                <h3>评论者：A</h3>
+                <p>小张真的很帅</p>
+            </article>
+            <article>
+                <h3>评论者：B</h3>
+                <p>小张是一个好学生</p>
+            </article>
+        </section>
+    </article>
+    <footer align="center">底部元素</footer>
+
+
+    <!-- 
+figure元素用于定义独立的流内容(图像﹑图表﹑照片﹑代码等等)，一般指一个单独的单元。figure元素的内容应该与主内容相关，
+但如果被删除，也不会对文档流产生影响。figcaption元素用于为figure元素组添加标题，一个figure元素内最多允许使用一个
+figcaption元素，该元素应该放在figure元素的第一个或者最后一个子元素的位置。
+     -->
+    <p>被称作“第四代体育馆”的“鸟巢”国家体育场是2008年北京奥运会的标志性建筑，她位于北京北四环边，包含在奥林匹克国家森林公园之中。占地面积20.4万平米，总建筑面积25.8万平米，拥有9.1万个固定座位，内设餐厅、运动员休息室、更衣室等。2008年奥运会期间，承担开幕式、闭幕式、田径比赛、男子足球决赛等赛事活动。
+    </p>
+    <figure>
+        <figcaption>北京鸟巢</figcaption>
+        <p>拍摄者：传智播客内容与资源组，拍摄时间：2015 年 12 月</p>
+        <img src="../images/niaochao.png" width="200px" alt="鸟巢">
+    </figure>
+
+    <!-- 
+hgroup元素用于将多个标题（主标题和副标题或者子标题)组成一个标题组，通常它与h1~h6元素组合使用·通常，将hgroup元素放在header元素中
+在使用hgroup元素时要注意以下几点:
+·如果只有一个标题元素不建议使用hgroup元素。
+·当出现一个以上的标题与元素时，推荐使用hgroup元素作为标题元素。
+·当一个标题包含副标题﹑section或者article元素时，
+建议将hgroup元素和标题相关元素存放到header元素容器中。
+ -->
+
+    <hgroup>
+        <h1>我的个人网站</h1>
+        <h2>我的个人作品</h2>
+    </hgroup>
+
+</body>
+
+</html>

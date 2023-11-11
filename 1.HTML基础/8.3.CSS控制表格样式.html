@@ -1,0 +1,90 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>CSS控制表格边框</title>
+   <style type="text/css">
+      table {
+         width: 800px;
+         height: 300px;
+         /*设置table的边框*/
+         border: 1px solid #30F;
+         /*单元格合并边框，默认属性值为separate(分离)*/
+         border-collapse: collapse;
+      }
+
+      /* 行标签tr无border样式属性 */
+      th,
+      td {
+         border: 1px solid #30F;
+         /* 为单元格内容与边框之间设置50px的内边距 */
+         padding: 50px;
+         /* 为单元格与单元格边框之间设置50px的外边距  */
+         margin: 50px;
+
+      }
+
+      /*为单元格单独设置宽度和高度 
+      在对同一行中的单元格定义不同的高度或对同一列中的单元格定义不同的宽度时，单元格最终的宽度或高度将取其中较大者
+      */
+      .one {
+         width: 100px;
+         height: 80px;
+      }
+
+      .two {
+         height: 40px;
+      }
+
+      .three {
+         width: 200px;
+      }
+   </style>
+</head>
+
+<body>
+   <table>
+      <caption></caption> <!--caption定义表格的标题-->
+      <tr>
+         <th>诗歌序号</th>
+         <th>诗歌名称</th>
+         <th>作者</th>
+         <th>内容</th>
+      </tr>
+      <tr>
+         <th>1</th>
+         <td class="one">《峨眉山月歌》</td>
+         <td class="two">李白</td>
+         <td>峨眉山月半轮秋，影入平羌江水流。夜发清溪向三峡，思君不见下渝州。</td>
+      </tr>
+      <tr>
+         <th>2</th>
+         <td class="three">《江南逢李龟年》</td>
+         <td>杜甫</td>
+         <td>岐王宅里寻常见，崔九堂前几度闻。正是江南好风景，落花时节又逢君。</td>
+      </tr>
+      <tr>
+         <th>3</th>
+         <td>《行军九日思长安故园》</td>
+         <td>岑参</td>
+         <td>强欲登高去，无人送酒来。遥怜故园菊，应傍战场开。</td>
+      </tr>
+      <tr>
+         <th>4</th>
+         <td>《夜上受降城闻笛》</td>
+         <td>李益</td>
+         <td>回乐烽前沙似雪，受降城外月如霜。不知何处吹芦管，一夜征人尽望乡。</td>
+      </tr>
+      <tr>
+         <th>5</th>
+         <td>《秋夕》</td>
+         <td>杜牧</td>
+         <td>银烛秋光冷画屏，轻罗小扇扑流萤。天阶夜色凉如水，卧看牵牛织女星。</td>
+      </tr>
+   </table>
+</body>
+
+</html>

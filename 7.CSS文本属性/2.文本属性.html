@@ -1,0 +1,105 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>文本属性实例</title>
+<style type="text/css">
+h3 {font-weight:bold; color:#00f;}
+</style>
+</head>
+
+<body>
+
+<!-- text-align：文本对齐 -->
+<!-- left：左对齐，为默认值 
+right：右对齐
+center：居中对齐
+justify：表示文本两端对齐，只有文字内容超过一行的时候才能看出变化，会把每行文字最左侧的字符或最右侧的字符对齐，用的较少
+-->
+
+<h3>1.文本对齐</h3>
+<p style="text-align:center">白日依山尽</p>
+<p style="text-align:left">黄河入海流</p>
+<p style="text-align:right">欲穷千里目</p>
+<p style="text-align:justify">更上一层楼</p>
+
+<!-- text-indent：首行文本的缩进,其值可为不同单位的数值，例如以px、em或%为单位的数值， 
+em：相对长度单位，相对于文字的大小
+-->
+<h3>2.首行缩进</h3>
+<p style="text-indent:2em;">要在清晨尽早开始一天的工作，约六点钟开始。要五点半起床，做早操，喝杯牛奶吃块面包，
+    然后就开始工作。当你已经习惯于六点钟开始工作之后，你就力争再提早十五到二十分钟。这是一种很好的内部刺激因素，
+    它会对全天的工作都有影响。清早上课前的一个半小时的脑力劳动，这是极宝贵的时间。</p>
+
+<!-- line-height:行间距，就是行与行之间的距离，即字符的垂直间距。
+    常用的单位有3种：像素单位px、倍率单位em、百分比单位%
+ -->
+<h3>3.行高</h3>
+<p style="line-height:normal">要在清晨尽早开始一天的工作，约六点钟开始。要五点半起床，做早操，喝杯牛奶吃块面包，然后就开始工作。当你已经习惯于六点钟开始工作之后，你就力争再提早十五到二十分钟。这是一种很好的内部刺激因素，它会对全天的工作都有影响。清早上课前的一个半小时的脑力劳动，这是极宝贵的时间。</p>
+<p style="line-height:150%">三十年来，我都是清晨五点钟开始自己一天的工作，一直工作到八点。三十本教育方面的书和三百多篇其他学术论文，都是在早晨五点至八点写成的。我已经形成了一种脑力劳动的节奏，乃至即使我想在早晨这个时间睡觉——也是睡不成的。因为这段时间里我全身心都准备着进行脑力劳动。</p>
+<p style="line-height:12px">我建议你在早晨这一个半小时内从事最复杂的创造性脑力劳动。去思考主要的理论问题、钻研艰深的理论文章、撰写论文等。如果你有含有研究因素的脑力工作，只在清晨的时间去做。这样，你就不会看书看到半夜了。要把你的作息时间安排得能在十点半以前就入睡。这样可以消除疲劳。</p>
+
+<!-- letter-spacing：字间距
+字间距就是字符与字符之间的空白距离，以px、em为单位
+字间距可以负数，表示缩小字间距，默认值为normal
+-->
+
+<!-- word-spacing：单词间距
+单词间距定义英文单词的间距，对中文无效。
+单位和letter-spacing一致
+单词间距可以为负值，表示缩小单词间距，默认值为normal.
+letter-spacing和word-spacing均可对英文进行设置。不同的是letter-spacing属性用于定义字母间距，word-spacing用于定义英文单词的间距
+-->
+<h3>4.字间距及单词间距</h3>
+<p style="letter-spacing:20px">白日依山尽</p>
+<p style="letter-spacing:0.5em">黄河入海流</p>
+<p>欲穷千里目</p>
+<p style="letter-spacing:-0.4em">更上一层楼</p>
+<p>Many of the designations used by manufacturers and sellers to distinguish their products are claimed as trademarks. Where those designations appear in this book, and O'Reilly Media, Inc. was aware of a trademark claim, the designations have been printed in caps or initial caps.</p>
+<p style="word-spacing:20px">Many of the designations used by manufacturers and sellers to distinguish their products are claimed as trademarks. Where those designations appear in this book, and O'Reilly Media, Inc. was aware of a trademark claim, the designations have been printed in caps or initial caps.</p> 
+
+<!-- text-decoration：文本装饰 -->
+<!-- none：没有文本装饰效果，为默认值
+    underline：用于设置下划线效果
+    overline：上划线效果
+    line-through：删除线效果
+-->
+<h3>5.文本装饰</h3>
+<p style="text-decoration:underline">白日依山尽</p>
+<p style="text-decoration:overline">白日依山尽</p>
+<p style="text-decoration:line-through">白日依山尽</p>
+<p>白日依山尽</p>
+
+<!-- text-transform：文本转换 -->
+<!-- 用于控制英文字母的大小写转换 
+none：不进行转换，为默认值
+capitalize：将首字母转换为大写字母。
+uppercase：将全部字母转换为大写字母
+lowercase：将全部字母转化为小写字母
+-->
+<h3>6.文本变换</h3>
+<p>Many of the designations used by manufacturers and sellers to distinguish their products are claimed as trademarks. Where those designations appear in this book, and O'Reilly Media, Inc. was aware of a trademark claim, the designations have been printed in caps or initial caps.</p> 
+<p style="text-transform:capitalize">Many of the designations used by manufacturers and sellers to distinguish their products are claimed as trademarks. Where those designations appear in this book, and O'Reilly Media, Inc. was aware of a trademark claim, the designations have been printed in caps or initial caps.</p>
+<p style="text-transform:uppercase">Many of the designations used by manufacturers and sellers to distinguish their products are claimed as trademarks. Where those designations appear in this book, and O'Reilly Media, Inc. was aware of a trademark claim, the designations have been printed in caps or initial caps.</p> 
+<p style="text-transform:lowercase">Many of the designations used by manufacturers and sellers to distinguish their products are claimed as trademarks. Where those designations appear in this book, and O'Reilly Media, Inc. was aware of a trademark claim, the designations have been printed in caps or initial caps.</p> 
+
+<!-- color：文本颜色
+1、颜色的英文名字：如：red、blue、green等。
+2、十六进制颜色值：如#F00、#ff6600、#29D645等。十六进制是以#开头的6位十六进制数值组成的，每两位数值为一个颜色分量，分别表示颜色的红、绿、蓝3个颜色分量。
+当3个颜色分量的两位十六进制数值都相同时，可使用CSS缩写。例如，#FF6600可缩写为#F60，#FF0000可缩写为#F00，#FFFFFF可缩写为#FFF
+在实际工作中，十六进制颜色值是较常用的，且十六进制颜色值中的英文字母不区分大小写。
+3、RGB颜色值：例如，红色可以表示为rgb(255,0,0)或rgb(100%,0%,0%)
+注意：使用RGB百分比颜色值，即时取值为0也不能省略%，必须写为0%
+-->
+<h3>7.文本颜色</h3>
+<p style="color:rgb(100%,0%,0%)">我是哪种颜色</p>
+
+<!-- 
+    查询以下4个属性，比如在百度搜索框输入：菜鸟教程 while-space，找到菜鸟教程页面；或者输入：html while-space，在其他网页查看具体功能
+    while-space：空格处理
+    text-shadow：阴影效果
+    text-overflow：处理溢出的文本
+    word-wrap属性：用于实现长单词和URL的自动换行。
+-->
+</body>
+</html>

@@ -1,0 +1,64 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>字体属性实例</title>
+<style>
+h3{font-weight:bold; color:#00f;}
+</style>
+</head>
+
+<body>
+<!--font-family:字体。常用的字体有宋体、微软雅黑、黑体等。  -->
+<!--通过font-family属性可以同时指定多个字体，各字体用英文逗号“，” 分隔；如果浏览器不支持第一种字体，则会尝试使用下一种字体。直到匹配到合适的字体-->
+<!--中文字体名需要用英文引号""引起来，但英文字体名不需要。当需要设置英文字体时，英文字体名必须位于中文字体名之前  -->
+<!--如果字体名中包含空格、#、$等，则该字体名必须用英文引号“""”引起来，例如“font-family:"Times New Roman";” -->
+<h3>1.font-family</h3>
+<p style="font-family:'Microsoft YaHei UI Light';">只有十分努力，才能看起来毫不费力！</p>
+
+
+<!--font-style：字体风格，例如斜体、倾斜和正常字体-->
+<!-- normal:默认值，标准字体 -->
+<!-- italic：斜体的样式 -->
+<!-- oblique：倾斜的字体样式 -->
+<h3>2.font-style</h3>
+<p style="font-style:normal">只有十分努力，才能看起来毫不费力！</p>
+<p style="font-style:italic">只有十分努力，才能看起来毫不费力！</p>
+<p style="font-style:oblique">只有十分努力，才能看起来毫不费力！</p>
+
+<!-- font-variant：变体 -->
+<!-- normal:标准字体 -->
+<!-- small-caps：用于使浏览器显示小型大写字母，即将所有的小写字母均转换为大写字母，但是转换后的字母比正常的大写字母小 -->
+<h3>3.font-variant</h3>
+<p>Every man dies , Not every man really lives .</p>
+<p>EVERY MAN DIES , NOT EVERY MAN REALLY LIVES .</p>
+<p style="font-variant:small-caps">Every man dies , Not every man really lives .</p>
+
+<!-- font-weight：文字粗细 -->
+<!-- normal：标准样式的文字 -->
+<!-- bold：粗体文字 -->
+<!-- bolder：比粗体更粗的文字 -->
+<!-- lighter：比粗体更细的文字 -->
+<!-- 100~900（100的整数倍）：用于定义由细到粗的文字。其中400对应的文字效果等同于normal对应的文字效果；700等同于bold对应的文字效果，数值越大，文字越粗 -->
+<h3>4.font-weight</h3>
+<p style="font-weight:normal">只有十分努力，才能看起来毫不费力！</p>
+<p style="font-weight:bold">只有十分努力，才能看起来毫不费力！</p>
+
+<!-- font-size：字号 -->
+<!-- px：像素单位 -->
+<!-- %：百分比单位 -->
+<h3>5.font-size</h3>
+<p>a.相对长度单位（推荐使用px）</p>
+<p style="font-size:18px">只有十分努力，才能看起来毫不费力！</p>
+<p>b.百分比</p>
+<p style="font-size:80%">只有十分努力，才能看起来毫不费力！</p>
+
+<!-- font：综合设置字体样式 -->
+<!-- 选择器{font:font-style font-variant font-weight font-size/line-height font-family} 
+    各个属性值必须按上述语法格式中的顺序书写，且以空格隔开-->
+    <!-- 在设置字体样式时，不需要设置的属性可以省略（取默认值），但必须保留font-size属性和font-family属性。否则font属性将不起作用 -->
+<h3>6.font</h3>
+<p style="font:italic small-caps bold 20px/20px Arial,'宋体' ">每天进步一点点，Make a little progress every day</p>
+<p style="font:italic small-caps bold ">每天进步一点点，Make a little progress every day</p>
+</body>
+</html>

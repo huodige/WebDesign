@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>box-sizing属性</title>
+    <style type="text/css">
+    .box1{
+        width:300px;
+        height:100px;
+        padding-right:10px;
+        margin-right:10px;
+        background:#F90;
+        border:10px solid #ccc;
+        box-sizing:content-box;
+        }
+    .box2{
+        width:300px;
+        height:100px;
+        padding-right:10px;
+        margin-right:10px;
+        background:#F90;
+        border:10px solid #ccc;
+        box-sizing:border-box;
+        }
+    </style>
+</head>
+<body>
+    CSS3提供了box-sizing属性，该属性用于定义盒子的宽度数值和高度数值是否包含元素的内边距数值和边框数值。
+    box-sizing: content-box/border-box;
+    content-box：定义width和height数值时，定义的数值不包括border和padding的数值。
+    border-box：定义width和height数值时，定义的数值包括border和padding的数值。
+    
+
+    <div class="box1">content_box属性值</div>
+    <br>
+    <div class="box2">border_box属性值</div>
+
+</body>
+</html>
+    
+    
+    
+    
+    

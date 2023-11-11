@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>list-style</title>
+    <style type="text/css">
+        ul {
+            list-style-type: square;
+        }
+
+        ol {
+            list-style-type: decimal;
+        }
+
+        /* ul {
+            list-style-image: url(../images/1.png);
+        } */
+        /* .in {
+            list-style-position: inside;          
+        }
+        .out{
+            list-style-position: outside;
+        } */
+        ul{
+            list-style:circle inside;
+        }
+        .one{
+            list-style:outside url(../images/1.png);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 
+list-style-type属性：用于控制列表项目符号的类型，其取值如下：
+disc:实心圆形（无序列表使用）
+circle:空心圆形（无序列表使用）
+square:实心方块（无序列表使用）
+decimal:阿拉伯数字（有序列表使用）
+lower-roman:小写罗马数字（有序列表使用）
+lower-alpha:小写英文字母（有序列表使用）
+lower-latin:小写拉丁字母（有序列表使用）
+hebrew:传统的希伯来编号（有序列表使用）
+none:不使用列表项目符号（有序列表使用）
+cjk-ideographic:简单的表意数字（有序列表使用）
+georgian:传统的乔治亚编号（有序列表使用）
+decimal-leading-zero:以0开头的阿拉伯数字（有序列表使用）
+upper-roman:大写罗马数字（有序列表使用）
+upper-alpha:大写英文字母（有序列表使用）
+upper-latin:大写拉丁字母（有序列表使用）
+armenian:传统的亚美尼亚编号（有序列表使用）
+     -->
+
+    <!-- 
+list-style-image属性：为列表项设置项目列表图像
+      -->
+    <!-- 
+    list-style-position属性：设置列表项目符号的位置,有两个取值：
+    inside:使列表项目符号位于列表文本内
+    outside:使项目列表符号位于列表文本外，为默认值
+ -->
+    <!-- 
+    list-style:列表项目符号 列表项目符号的位置 列表项目图像
+  -->
+    <h3>红色</h3>
+    <ul>
+        <li>大红</li>
+        <li>朱红</li>
+        <li>嫣红</li>
+    </ul>
+    <h3>蓝色</h3>
+    <ol>
+        <li>群青</li>
+        <li>普蓝</li>
+        <li>湖蓝</li>
+    </ol>
+
+    <h2>中秋节</h2>
+    <ul class="in">
+        <li>中秋节，又称月夕、秋节、仲秋节。</li>
+        <li>中秋节在农历八月十五。</li>
+        <li>2008年，中秋节被列为国家法定节假日。</li>
+    </ul>
+    <ul class="out">
+        <li>端午节</li>
+        <li>除夕</li>
+        <li>清明节</li>
+        <li>重阳节</li>
+    </ul>
+
+    <ul>
+        <li class="one">永和九年，岁在癸丑，暮春之初，会于会稽山阴之兰亭，修禊事也。</li>
+        <li>群贤毕至，少长咸集。</li>
+        <li>此地有崇山峻岭，茂林修竹，又有清流激湍，映带左右，引以为流觞曲水，列坐其次。</li>
+   </ul>
+</body>
+
+</html>

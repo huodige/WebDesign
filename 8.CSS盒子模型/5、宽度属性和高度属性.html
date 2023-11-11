@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>盒子模型的宽度属性与高度属性</title>
+    <style type="text/css">
+    .box{
+        width:450px;                  /*设置段落的宽度*/
+        height:120px;                 /*设置段落的高度*/
+        border:8px solid #00f;      /*设置段落的边框*/
+    }
+    </style>
+</head>
+<body>
+    <!-- CSS规范中，盒子的width属性和height属性仅指块元素内容的宽度和高度，块元素周围的内边距、边框和外边距是单独计算的。
+        盒子的宽度= width值+左右内边距值+左右边框宽度值+左右外边距值
+        盒子的高度= height值+上下内边距值+上下边框宽度值+上下外边距值
+    注意：
+        宽度属性width和高度属性height仅适用于块元素，对行内元素无效，但<img />标签和<input />标签除外。
+ -->
+    <p class="box">奉献就像蒲公英的种子，随风飘散，落到哪里就在哪里生根、成长。</p>
+</body>
+</html>

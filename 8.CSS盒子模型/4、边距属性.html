@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    在网页设计中，使用边距属性可以让内容、边框以及各元素之间有一定的空间和距离。在CSS中边距属性分为内边距属性和外边距属性两种。
+
+    内边距属性：padding
+    内边距也被称为内填充，是指元素内容与边框之间的距离。
+    padding:上内边距 [右内边距 下内边距 左内边距];
+    padding相关属性的取值可为auto（默认值）、不同单位的数值、相对于父元素（或浏览器）宽度的百分比。
+    在实际工作中padding属性最常用的属性值是像素值。padding属性的属性值不能为负值。同边框相关属性一样，
+    使用复合属性padding定义内边距时，必须按顺时针顺序采用值复制的原则，一个值为四边、两个值为上下/左右，三个值为上/左右/下。
+
+    通过单边内边距属性精准设置元素某一边的内边距
+    padding-top:上内边距;
+    padding-right:右内边距;
+    padding-bottom:下内边距;
+    padding-left:左内边距;
+    
+    注意：内外边距属性值为百分比是相对于父元素宽度width的百分比，内边距随父元素width的变化而变化，和高度height无关。
+
+
+    外边距属性：margin
+    外边距指的是相邻元素（盒子）之间的距离。在CSS中margin属性用于设置外边距，它是一个复合属性。
+    margin:上外边距 [右外边距 下外边距 左外边距];
+    margin属性的取值遵循值复制的原则。外边距的属性值可以使用负值。当外边距设置为负值时，相邻元素会发生重叠。
+
+    当对块元素应用宽度属性width，并将左右的外边距的属性值都设置为auto，可使块元素水平居中，实际工作中常用这种方式进行网页布局。
+    例如：.num{ margin:0 auto;}
+
+    通过单边外边距属性精准设置元素某一边的外边距
+    margin-top:上外边距;
+    margin-right:右外边距;
+    margin-bottom:下外边距;
+    margin-left:左外边距;
+
+    清除标签默认的内外边距
+    *{
+        padding:0;         /*清除内边距*/
+        margin:0;          /*清除外边距*/
+    }
+    
+
+</body>
+</html>

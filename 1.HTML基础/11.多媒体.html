@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- 音频标签 audio 
+1.支持三种音频格式
+    Ogg是一种新的音频压缩格式，类似于MP3的音乐格式, ogg是完全免费﹑开放和没有专利限制的格式;
+    Mp3是一种音频压缩技术，即使压缩成较小的文件音频质量也没有明显下降。
+    wav是微软公司开发的一种声音文件格式;
+    -->
+
+    <!-- 
+    2.基本语法格式
+<audio src="音频文件路径" controls="controls">您的浏览器不支持audio 标签。</audio>
+src属性用于设置音频文件的路径
+controls属性用于为音频提供播放控件
+<audio>和</audio>之间可以插入文字，用于不支持audio元素的浏览器显示·
+ -->
+    <!-- 
+    autoplay：取值autoplay,当页面载入完成后自动播放音频。
+    loop：取值loop,音频结束时重新开始播放◎
+    preload：取值preload,如果出现该属性，则音频在页面加载时进行加载,并预备播放。如果使用“autoplay"，则忽略该属性○
+ -->
+ <!-- 代码参考链接： https://www.runoob.com/html/html-sounds.html-->
+ <audio controls="controls" src="horse.mp3">
+</audio>
+<audio controls height="100" width="100">
+    <source src="horse.mp3" type="audio/mpeg">
+    <source src="horse.ogg" type="audio/ogg">
+    <embed height="50" width="100" src="horse.mp3">
+  </audio>
+
+
+
+  <!-- 视频标签video
+在HTML5中 ,video支持三种视频格式，分别为:
+. 0gg是一个自由且开放标准的容器格式, ogg是完全免费﹑开放和没有专利限制的
+.MPEG4最少的数据获得最佳的图像质量;
+. WebM由Google资助的开发项目，该视频文件格式应能提供高质量的视频压缩以
+配合HTML 5使用。
+   -->
+
+   <!-- 
+2基本语法格式
+<video src="视频文件路径" controls="controls">您的浏览器不支持video标签。</video>
+
+    -->
+    <!-- 其他属性：
+autoplay:取值autoplay,当页面载入完成后自动播放视频。
+loop:取值loop,视频结束时重新开始播放
+preload:取值preload，如果出现该属性，则视频在页面加载时进行加载,并预备播放。如果使用“autoplay" ，则忽略该属性。
+poster:取值url,当视频缓冲不足时,该属性值链接一个图像，并将该图像按照一定的比例显示出来。
+width：宽度
+height:高度
+muted:规定视频的输出音量被静音
+     -->
+
+     <!-- 代码参考链接：https://www.runoob.com/html/html5-video.html -->
+     <video width="320" height="240" controls>
+        <source src="movie.mp4" type="video/mp4">
+        <source src="movie.ogg" type="video/ogg">
+      您的浏览器不支持Video标签。
+      </video>
+</body>
+
+</html>

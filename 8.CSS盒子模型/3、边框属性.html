@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    边框属性：
+    border-style:用于设置边框样式（none:无边框样式默认值；solid:边框样式为单实线；dashed:边框样式为虚线；dotted:边框样式为点线；
+                 double:边框样式为双实线）
+    border-width:用于设置边框宽度，单位为像素值
+    border-color:用于设置边框颜色
+    boder:用于设置综合边框
+    border-radis:用于设置圆角边框
+    border-image:用于设置图片边框
+
+
+    border-style:上边 [右边 下边 左边]
+    设置1个属性值：代表4条边的样式。
+    设置2个属性值：第1个属性值代表上边和下边的样式，第2个属性值代表左边和右边的样式
+    设置3个属性值：第1个属性值代表上边的属性值，第2个属性值代表左边和右边的样式，第3个属性值代表下边的样式。
+
+
+    border-width:上边 [右边 下边 左边]
+    常用单位为像素，属性值和边对应关系与border-style类似
+
+    border-color:上边 [右边 下边 左边]
+
+    border:宽度 样式 颜色
+    当每一条边的样式都不相同，或者只需单独定义某一条边的样式时，可以使用单侧边框的符合属性：border-top、border-buttom、
+    border-left、border-right进行设置
+
+    border-radius:参数1/参数2
+    参数1表示圆角的水平半径，参数2表示圆角的垂直半径，两个参数用“/”分割
+    如果第2个参数值省略，则其默认等于第1个参数值。
+    border-radius属性同样遵循值复制的原则，其水平半径（参数1）和垂直半径（参数2）均可以设置1~4个参数值，用来表示圆角半径的大小。
+    当设置1个参数值时，表示4个圆角半径。
+    当设置2个参数值时，第1个参数值代表左上和右下圆角半径，第2个参数值代表右上和左下圆角半径
+    当设置3个参数值时，第1个参数值代表左上圆角半径，第2个参数值代表右上和左下圆角半径，第3个参数值代表右下圆角半径
+    当设置4个参数值时，第1个参数值代表左上圆角半径，第2个参数值代表右上圆角半径，第3个参数值代表右下圆角半径，第4个参数值代表左下圆角半径
+
+    border-image: border-image-source border-image-slice/border-image-width/border-image-outset border-image-repeat;
+    border-image属性是一个复合属性，其相关属性如下：
+    border-image-source：用于指定图像的路径，常用属性值URL
+    border-image-slice：用于指定边框图像顶部、右侧、底部、左侧的内向偏移量（可以理解为图像的裁切位置），常用单位百分比
+    border-image-width：用于指定边框宽度，常用单位像素值
+    border-image-outset:用于指定边框图像向盒子外部延伸的距离（可以理解为边框图像与边框的距离），常用值为数字
+    border-image-repeat：用于指定图像的平铺方式，repeat（平铺）、stretch（拉伸）
+    
+
+</body>
+</html>

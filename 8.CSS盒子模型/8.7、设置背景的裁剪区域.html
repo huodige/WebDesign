@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>设置背景的裁剪区域</title>
+    <style type="text/css">
+    p{
+        width:300px;
+        height:150px;
+        border:8px dotted #666;
+        padding:40px;
+        background-color:#CF9;
+        background-repeat:no-repeat;
+        background-clip:content-box;   /*从内容区域向外裁剪背景*/
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+    在CSS样式中，可以通过设置背景的裁剪区域来控制背景的显示位置。background-clip属性用于定义背景图像的裁剪区域。
+    语法格式：background-clip:属性值;
+    border-box：默认值，从边框区域向外裁剪背景。
+    padding-box：从内边距区域向外裁剪背景。
+    content-box：从内容区域向外裁剪背景。
+     -->
+    <p>“一分耕耘一分收获”“未必尽如人意，但求无愧我心”。不论是科学技术人员，还是普通群众；不论是国家干部，还是环卫工人，
+        只要对祖国赤诚、对事业认真，对工作挚爱，勤勤恳恳地在自己的岗位上耕耘，就能释放光和热，绽放鲜艳的理想之花。</p>
+</body>
+</html>

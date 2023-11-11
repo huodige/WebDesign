@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>清除浮动</title>
+<style type="text/css">
+.father{                          /*定义父元素的样式*/
+    background:#eee;
+    border:1px dashed #ccc;
+}
+.box01,.box02,.box03{           /*定义box01、box02、box03三个盒子的样式*/
+	height:50px;
+	line-height:50px;
+    background:#FF9;
+    border:1px solid #93b7ff;
+	margin:15px;
+	padding:0px 10px;
+}
+p{                                 /*定义段落文本的样式*/
+    background:#c1d5ff;
+    border:1px dashed #93b7ff;
+	margin:15px;
+	padding:0px 10px;
+	clear:left;                 /*清除左浮动*/  
+}
+.box01,.box02,.box03 {                           /*定义box01左浮动*/ 
+	float:left;
+}
+
+</style>
+</head> 
+<body>
+    <!-- 
+    在网页中，由于浮动元素不再占用原文档流的位置，使用浮动时会影响后面相邻的固定元素，这时，如果要避免浮动对其他元素的影响，就需要清除浮动。
+    语法格式：选择器{clear:属性值;}
+    属性值：
+    left:不允许左侧有浮动元素（清除左侧浮动的影响）
+    right:不允许右侧有浮动元素（清除右侧浮动的影响）
+    both:同时清除左右两侧浮动的影响
+    clear属性只能清除元素左右两侧浮动的影响。然而在制作网页时，经常会遇到一些特殊的浮动影响。
+    由于子元素和父元素为嵌套关系，不存在左右位置，所以使用clear属性并不能清除子元素浮动对父元素的影响。 -->
+
+
+<div class="father">
+	<div class="box01">box01</div>
+	<div class="box02">box02</div>
+	<div class="box03">box03</div>
+	<p>在山东烟台，全球最大的海上钻井平台“蓝鲸2号”备受瞩目。这个海上“巨无霸”有37层楼高，其甲板有一个足球场那么大。它可以在水深超过3000米的海域作业，最大钻井深度15250米。“蓝鲸2号”生产经理程骋刚来这里时，大部分人都是洋面孔，如今绝大部分工作人员都是中国面孔，程聘感觉“有一股强大的中国力量在引领海工行业的发展”。</p>
+</div>
+</body>
+</html>

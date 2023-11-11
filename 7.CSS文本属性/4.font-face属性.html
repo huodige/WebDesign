@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@font-face规则</title>
+    <style type="text/css">
+        /* @font-face {
+            font-family: jianzhi;
+            /*服务器字体名称*/
+            /* src: url(FZJZJW.TTF); */
+            /*服务器字体名称*/
+        /* } */ 
+        @font-face {
+            font-family: jianzhi;
+            /*服务器字体名称*/
+            src: url(../font/Roman\ SD.ttf);
+            /*服务器字体名称*/
+        }
+        p {
+            font-family: jianzhi;
+            /*设置字体样式*/
+            font-size: 32px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- @font-face是CSS3的新增规则，用于定义服务器字体，通过@font-face规则，可以在计算机中使用未安装的字体。使用@font-face规则定义服务器
+    字体的基本语法格式如下：
+@font-face{
+    font-family:字体名称;
+    src:字体路径;
+}
+-->
+    <p>为莘莘学子改变命运而讲课 Roman</p>
+    <p>为千万学生少走弯路而著书 News</p>
+    <!-- 总结：
+    1.下载字体，并将其存储到相应的文件夹中,比如：https://www.dafont.com/  或  https://www.fontspace.com/
+    2.使用@font-face规则定义服务器字体
+    3.设置font-family属性
+    -->
+</body>
+
+</html>

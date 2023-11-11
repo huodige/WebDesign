@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>    
+        strong {
+            color: red;
+        }
+
+        #header2 {
+            color: green;
+        }
+    </style>
+
+
+</head>
+
+<body>
+   
+    <!-- 3、继承样式的权重为0，在嵌套结构中，当父元素被子元素继承时，它的权重都为0，也就是说子元素定义的样式会覆盖父元素的样式 -->
+    <p id="header2" class="blue">
+        <strong>
+            继承样式不如自定义的样式权重大
+        </strong>
+    </p>
+    
+</body>
+
+</html>
