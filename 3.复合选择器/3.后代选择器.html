@@ -8,10 +8,13 @@
     <style type="text/css">
         p strong{color:red;}     /*后代选择器*/
         strong{color:blue;}
+        p span{color: blueviolet;}
     </style>
 </head>
 <body>
-    <p>天下难事，<strong>必作于易。</strong></p>
+    <!-- 后代选择器 后代包括子代、孙代、曾孙等
+    -->
+    <p>天下难事，<strong>必作于易。<span>孙代</span></strong></p>
     <strong>天下大事，必作于细。</strong>
 </body>
 </html>
