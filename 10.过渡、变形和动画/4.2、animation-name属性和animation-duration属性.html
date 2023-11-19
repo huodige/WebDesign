@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation-duration 属性</title>
+    <style type="text/css">
+    img{
+        width:200px;
+        animation-name:mymove;             /*定义动画名称*/
+        animation-duration:10s;            /*定义动画时间*/
+        }
+    @keyframes mymove{
+        from {transform:translate(0) rotateY(180deg);}
+        50% {transform:translate(1000px) rotateY(180deg);}
+        51% {transform:translate(1000px) rotateY(0deg);}
+        to {transform:translate(0) rotateY(0deg);}
+        }
+    </style>
+</head>
+<body>
+    <!-- animation-name属性用于定义要应用的动画名称，该动画名称会被@keyframes规则引用。
+    其语法格式为：animation-name:keyframename | none;
+    animation-name 属性初始值为none
+    keyframename参数用于规定需要绑定到@keyframes规则规则的名称，如果值为none，则表示不应用任何动画。 -->
+
+
+    <!-- animation-duration属性用于定义整个动画效果完成所需要的时间。
+    animation-duration: time;
+    animation-duration 属性初始值为none
+    time参数是以秒（s）或者毫秒（ms）为单位的时间 -->
+
+    <img src="../images/10章节/bozai.gif" >
+</body>
+</html>
+    
+    
+    
+
+    

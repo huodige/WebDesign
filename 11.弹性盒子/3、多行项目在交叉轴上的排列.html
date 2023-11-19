@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .father {
+            width: 800px;
+            height: 500px;
+            border: 1px solid black;
+            display: flex;
+            /*换行*/
+            flex-wrap: wrap;
+            /*默认拉伸自己以适应*/
+            align-content: stretch;
+            align-content: flex-start;
+            align-content: flex-end;
+            align-content: center;
+            align-content: space-around;
+            align-content: space-between;
+        }
+
+        .son {
+            width: 100px;
+            height: 100px;
+            background-color: blueviolet;
+            border: 1px solid black;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 
+        6.多行项目在交叉轴上的排列
+        align-content: stretch;默认拉伸以适应交叉轴的空间
+        align-content: flex-start;交叉轴起点对齐
+        align-content: flex-end;交叉轴终点对齐
+        align-content: center;交叉轴中心对齐
+        align-content: space-around;容器两边有间隙
+        align-content: space-between;容器两边没有间隙
+    -->
+
+    <div class="father">
+        <div class="son">1</div>
+        <div class="son">2</div>
+        <div class="son">3</div>
+        <div class="son">4</div>
+        <div class="son">5</div>
+        <div class="son">6</div>
+        <div class="son">7</div>
+        <div class="son">8</div>
+        <div class="son">9</div>
+        <div class="son">10</div>
+        <div class="son">11</div>
+        <div class="son">12</div>
+        <div class="son">13</div>
+        <div class="son">14</div>
+        <div class="son">15</div>
+    </div>
+</body>
+
+</html>

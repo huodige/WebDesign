@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transition-property属性</title>
+    <style type="text/css">
+        div {
+            width: 400px;
+            height: 100px;
+            background-color: red;
+            font-weight: bold;
+            color: #FFF;
+        }
+
+        div:hover {
+            background-color: yellow;
+            /*指定动画过渡的CSS属性*/
+            transition-property: background-color;
+            /*指定动画过渡的CSS属性*/
+            transition-duration: 5s;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- transition-property属性用于设置应用过渡效果的CSS属性。
+    语法格式为：transition-property:none|all|property;
+    none:没有属性会获得过渡效果。
+    all:所有属性都将获得过渡效果。
+    property:定义应用过渡效果的CSS属性 ，多个属性之间以逗号分隔。 -->
+
+    <!-- 
+    transition-duration属性用于定义过渡效果持续的时间。
+    transition-duration:time;
+    time默认值为0，单位为秒(s)或者毫秒(ms)
+     -->
+    <div>杨花落尽子规啼，闻道龙标过五溪。</div>
+</body>
+
+</html>

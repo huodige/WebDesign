@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .box {
+            width: 300px;
+            height: 300px;
+            margin: 50px auto;
+            border: 2px solid black;
+            display: flex;
+        }
+
+        .son {
+            /*width: 100px;*/
+            height: 300px;
+            background-color: chartreuse;
+            border: 2px dashed black;
+            box-sizing: border-box;
+            flex-basis: 100px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- 
+        4、设置项目在主轴方向上的尺寸flex-basis:
+        auto默认值:项目在主轴上没有设置flex-basis，会参考width;如果也没有设置width，靠内容撑开。
+        px为单位的数字
+        百分比参考父元素的宽高(一般不用)
+        当尺寸和flex-basis冲突，以flex-basis为准
+     -->
+    <div class="box">
+        <div class="son"></div>
+        <div class="son">shenshenshenn </div>
+        <div class="son">深深很差距</div>
+    </div>
+</body>
+
+</html>

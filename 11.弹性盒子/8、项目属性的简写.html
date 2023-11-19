@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .father {
+        width: 600px;
+        height: 300px;
+        border: 1px solid black;
+        display: flex;
+    }
+
+    .son {
+        height: 300px;
+        border: 2px dashed black;
+        box-sizing: border-box;
+        background-color: chartreuse;
+        /*平分空间最常用的简写*/
+        flex: 1;
+    }
+</style>
+
+<body>
+    <!-- 
+    5、项目属性的简写
+    flex:flex-grow flex-shrink flex-basis
+    -顺序不可以换
+    -平分空间:flex: 1(这是最常用的简写)
+     -->
+    <div class="father">
+        <div class="son">1</div>
+        <div class="son">111111111111111111</div>
+        <div class="son">22222222222222222222222</div>
+    </div>
+</body>
+
+</html>

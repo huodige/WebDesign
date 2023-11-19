@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 600px;
+            height: 400px;
+            border: 2px solid black;
+            margin: 30px auto;
+            display: flex;
+        }
+
+        .son {
+            width: 100px;
+            height: 100px;
+            background-color: chartreuse;
+            border: 1px solid black;
+            box-sizing: border-box;
+            /*交叉轴上默认*/
+            align-self: auto;
+            /*当子元素本身不设置宽高时，拉伸自己以适应*/
+            align-self: stretch;
+        }
+
+        .box .son :nth-child(1) {
+            /*交叉轴起点对齐*/
+            align-self: flex-start;
+        }
+
+        .bo× .son :nth-child(2) {
+            /*交叉轴终点对齐*/
+            align-self: flex-end;
+        }
+
+        .box .son :nth-child(3) {
+            /*交叉轴中对齐*/
+            align-self: center;
+        }
+
+        .box .son :nth-child(4) {
+            /*交叉轴基线对齐*/
+            line-height: 20px;
+            align-self: baseline;
+        }
+
+        .box .son :nth-child(5) {
+            align-self: baseline;
+            line-height: 30px;
+        }
+    </style>
+    </style>
+</head>
+
+<body>
+    <!-- 
+    1、设置单个项目在交叉轴上的排列方式align-self:
+    auto默认继承父元素的align-items的属性值，如果父元素没有设置align-items,就会找自己的align-self的默认值
+    stretch：默认值拉伸项目在交叉轴方向上不设置尺寸的时候
+    flex-start：交叉轴起点对齐
+    flex-end：交叉轴终点对齐
+    center：交叉轴中心对齐
+    baseline：交叉轴基线对齐
+     -->
+    <div class="box">
+        <div class="son">1</div>
+        <div class="son">2</div>
+        <div class="son">3</div>
+        <div class="son">4</div>
+        <div class="son">5</div>
+        <div class="son">6</div>
+    </div>
+</body>
+
+</html>

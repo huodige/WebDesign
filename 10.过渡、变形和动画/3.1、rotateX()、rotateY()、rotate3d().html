@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rotateX()</title>
+    <style type="text/css"> 
+    div{
+        width:250px;
+        height:50px;
+        background-color:#FF0;
+        border:1px solid black;
+    }
+    div:hover{
+        transition:all 1s ease 2s;              /*设置过渡效果*/
+        transform:rotateX(60deg);
+        /* transform:rotateY(60deg); */
+
+    }
+    </style>
+</head>
+<body>
+    <!-- 
+    在CSS3中，rotateX()可以让指定元素围绕X轴旋转。
+    其语法格式为：transform:rotateX(a);
+    参数a用于定义旋转的角度值，单位为deg，取值可以是正数也可以是负数。如果值为正数，元素将围绕X轴顺时针旋转；
+    如果值为负数，元素围绕X轴逆时针旋转。 
+-->
+<!-- 在CSS3中，rotateY()可以让指定元素围绕Y轴旋转。
+其语法格式：transform:rotateY(a);
+参数a与rotateX(a)中的a含义相同，用于定义旋转的角度。如果值为正数，元素围绕Y轴顺时针旋转；如果值为负数，元素围绕Y轴逆时针旋转。 -->
+
+<!-- rotateZ()方法和rotateX()方法、rotateY()方法功能一样，区别在于rotateZ()方法用于指定一个元素围绕Z轴旋转。如果仅从视觉角度上看，
+rotateZ()方法让元素顺时针或逆时针旋转，与2D中的rotate()效果等同，但rotateZ()不是在2D平面上的旋转。 -->
+
+<!-- rotated3d()是通过rotateX()、rotateY()和rotateZ()演变的综合属性，用于设置多个轴的3D旋转。
+其语法格式：rotate3d(x,y,z,angle);
+x、y、z可以取值0或1，当要沿着某一轴转动，就将该轴的值设置为1，否则设置为0。angle为要旋转的角度。 -->
+
+    <div>元素旋转后的位置</div>
+</body>
+</html>
+    
+
+    

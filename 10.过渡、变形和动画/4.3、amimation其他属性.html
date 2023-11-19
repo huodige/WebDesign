@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation-direction属性</title>
+    <style type="text/css">
+        div{
+            width:200px;
+            height:150px;
+            border-radius:50%;
+            background:#F60;
+            animation-name:mymove;         /*定义动画名称*/
+            animation-duration:8s;         /*定义动画时间*/
+            animation-iteration-count:2;   /*定义动画播放次数*/
+            animation-direction:alternate; /*动画逆向播放*/
+        }
+        @keyframes mymove{
+            from {transform:translate(0) rotateZ(0deg);}
+            to {transform:translate(1000px) rotateZ(1080deg);}
+        }
+    </style>
+</head>
+<body>
+    <!-- animation-timing-function用来规定动画的速度曲线，可以定义使用哪种方式来执行动画速率。
+    其语法格式为：
+    animation-timing-function:value;
+    属性的默认值是ease，其他属性值如下：
+    linear：动画从头到尾的速度是相同的。
+    ease：默认属性值。动画以低速开始，然后加快，在结束前变慢。
+    ease-in：动画以低速开始。
+    ease-out：动画以低速结束。
+    ease-in-out：动画以低速开始和结束。
+    cubic-bezier(n,n,n,n)：在cubic-bezier方法中自己的值。可能的值是从0到1的数值。 -->
+
+    <!-- animation-delay属性用于定义执行动画效果延迟的时间。
+    其语法格式为：animation-delay:time;
+    参数time用于定义动画开始前等待的时间，其单位是秒或者毫秒，默认属性值为0
+    当设置animation-delay属性为负值后，动画会跳过该时间播放。 -->
+
+    <!-- animation-iteration-count属性用于定义动画的播放次数。
+    其基本语法格式为：animation-iteration-count: number | infinite;
+    animation-iteration-count属性初始值为1
+    number用于定义播放动画的次数
+    infinite指定动画循环播放 -->
+
+    <!-- animation-direction属性定义当前动画播放的方向，即动画播放完成后是否逆向交替循环。
+    其语法格式为：animation-direction: normal | alternate;
+    normal为默认属性值，动画会正常播放
+    alternate属性值会使动画会在奇数次数（1、3、5 等等）正常播放，而在偶数次数（2、4、6 等）逆向播放。 -->
+
+    <!-- animation属性
+    animation属性是一个简写属性，用于在一个属性中设置animation-name、animation-duration、animation-timing-function、
+    animation-delay、animation-iteration-count和animation-direction六个动画属性。
+    语法格式为：animation: animation-name animation-duration animation-timing-function animation-delay animation-iteration-count 
+    animation-direction;
+    例如：
+    animation: mymove 5s linear 2s 3 alternate; -->
+
+
+
+    <div></div>
+</body>
+</html>
+    
+    
+    
+    
+
+    

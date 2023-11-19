@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>skew()</title>
+    <style type="text/css"> 
+    div{
+        width:100px;
+        height:50px;
+        margin:0 auto;
+        background-color:#F90;
+        border:1px solid black;
+    }
+    #div2{transform:skew(30deg,10deg);}
+/* 旋转 */
+    /* #div2{transform:rotate(30deg);} */
+    </style>
+</head>
+<body>
+    <!-- 在CSS3中，使用skew()可以实现元素倾斜效果。
+    其语法格式为：transform:skew(x-value,y-value);
+    参数x-value和参数y-value分别用于定义水平（X轴）和垂直（Y轴）的倾斜角度。参数值为角度数值，单位为deg，
+    取值可以为正值或者负值表示不同的的切斜方向。如果省略了第二个参数，则取默认值0。 -->
+
+    <!-- 在CSS3中，使用rotate()可以旋转指定的元素对象。
+    transform:rotate(angle);
+    参数angle表示要旋转的角度值，单位为deg。如果角度为正数值，则按照顺时针进行旋转，否则按照逆时针旋转。 -->
+
+
+    <div>未发生倾斜的元素</div>
+    <div id="div2">发生倾斜的元素</div>
+</body>
+</html>
+
+    

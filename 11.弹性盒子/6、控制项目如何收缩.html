@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 200px;
+            height: 300px;
+            background-color: aqua;
+            display: flex;
+        }
+        .son {
+            width: 200px;
+            height: 200px;
+            border: 2px solid black;
+            background-color: chocolate;
+        }
+        .box .son:nth-child(1) {
+            flex-shrink: 1;
+        }
+        .box .son:nth-child(2) {
+            flex-shrink: 2;
+        }
+        .box .son:nth-child(3) {
+            flex-shrink: 3;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        3、控制项目如何收缩
+        如果主轴方向上空间不足，项目们按照取值的占比，自动减少对应的尺寸
+        flex-shrink:默认值分配空间收缩不分配空间不收缩数字1234...
+     -->
+    <div class="box">
+        <div class="son">1</div>
+        <div class="son">2</div>
+        <div class="son">3</div>
+    </div>
+</body>
+</html>

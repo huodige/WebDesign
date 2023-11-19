@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .father {
+            width: 300px;
+            height: 400px;
+            background-color: cadetblue;
+            display: flex;
+            margin: 50px auto;
+            /*弹性盒子属性*
+        /*当单行盒子大小不够时，是否换行并且，自平分父元素空间*/
+            flex-wrap: wrap;
+            /*主轴默认为水平从左向右*/
+            flex-direction: row;
+            /*主轴水平从右向左*/
+            flex-direction: row-reverse;
+            /*垂直从上到下*/
+            flex-direction: column;
+            /*垂直从下到上*/
+            flex-direction: column-reverse;
+            /*主轴和换行的简写*/
+            flex-flow: column wrap;
+        }
+
+        .son {
+            width: 100px;
+            height: 100px;
+            background-color: chartreuse;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 
+        1.容器在主轴方向上空间不够的时候，项目是否换行:flex-wrap
+        flex-wrap:nowrap //默认不换行
+        flex-wrap:wrap //换行
+        2.主轴方向:flex-direction
+        flex-direction: row; //默认水平从左到右
+        flex-direction: row-reverse; //水平从右到左
+        flex-direction: column; //垂直从上到下
+        flex-direction: column-reverse; //垂直从下到上
+        3.换行和主轴方向的简写
+        flex-flow: wrap column;
+     -->
+    <div class="father">
+        <div class="son">1</div>
+        <div class="son">2</div>
+        <div class="son">3</div>
+    </div>
+</body>
+
+</html>

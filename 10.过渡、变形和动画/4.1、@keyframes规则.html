@@ -1,0 +1,24 @@
+@keyframes规则用于创建动画，animation属性只有配合@keyframes规则才能实现动画效果。
+其语法格式为：
+@keyframes  animationname {
+    keyframes-selector{css-styles;}
+}
+animationname：表示当前动画的名称，它将作为引用时的唯一标识，因此不能为空。
+keyframes-selector：关键帧选择器，即指定当前关键帧要应用到整个动画过程中的位置，值可以是一个百分比、from或者to。
+css-styles：定义执行到当前关键帧时对应的动画状态，由CSS样式属性进行定义，多个属性之间用分号分隔，不能为空。
+例如，使用@keyframes属性可以定义一个淡入动画，代码如下：
+@keyframes appear{
+    0%{opacity:0;}       /*动画开始时的状态，完全透明*/
+    100%{opacity:1;}     /*动画结束时的状态，完全不透明*/
+}
+也可以用：
+@keyframes appear{
+    from{opacity:0;}       /*动画开始时的状态，完全透明*/
+    to{opacity:1;}     /*动画结束时的状态，完全不透明*/
+}
+
+如果创建一个淡入淡出的动画效果：
+@keyframes appear{
+    from,to{opacity:0;}       /*动画开始和结束时的状态，完全透明*/
+    20%,80%{opacity:1;}     /*动画中间的状态，完全不透明；元素渐渐淡入，在动画的20%处变得可见，然后动画效果持续到80%处，元素慢慢淡出*/
+}

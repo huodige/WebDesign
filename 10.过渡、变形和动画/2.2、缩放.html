@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>scale()</title>
+    <style type="text/css"> 
+    div{
+        width:100px;
+        height:50px;
+        background-color:#FF0;
+        border:1px solid black;
+    }
+    #div2{
+        margin:100px;
+        transform:scale(2,1);
+    }
+    </style>
+</head>
+<body>
+    <!-- 在CSS3中，使用scale()可以实现元素缩放效果。
+    其语法格式为：transform:scale(x-value,y-value);
+    参数x-value和y-value分别用于定义水平（X轴）和垂直（Y轴）的缩放倍数。参数值可以为正数和负数。
+    其中大于1的正数和小于-1的负数用于放大元素，小于1的正数和大于-1的负数用于缩小元素。当参数值为负数时，元素会翻转显示。
+    如果第二个参数省略，则第二个参数默认等于第一个参数值。 -->
+    <div>未放大的元素</div>
+    <div id="div2">放大后的元素</div>
+</body>
+</html>
+
+    

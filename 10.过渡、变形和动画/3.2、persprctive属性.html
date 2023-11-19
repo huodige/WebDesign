@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>perspective属性</title>
+    <style type="text/css"> 
+    div{	
+        width:250px;
+        height:50px;
+        border:1px solid #666;
+        perspective:250px;                     /*设置透视效果*/
+        margin:0 auto;
+        }
+    .div1{
+        width:250px;
+        height:50px;
+        background-color:#0CC;
+        
+    }
+    .div1:hover{
+        transition:all 1s ease 2s;          
+        transform:rotateX(60deg);
+    }
+    </style>
+</head>
+<body>
+    <!-- perspective属性可以简单的理解为视距，主要用于呈现良好的3D透视效果。
+    其语法格式：perspective:参数值;
+    参数值可以为none或者数值（一般为像素值）。参数值越小，3D透视效果越突出。 -->
+
+
+    <div>
+        <div class="div1">夕阳西下，断肠人在天涯。</div>
+    </div>
+</body>
+</html>
+    
+
+    

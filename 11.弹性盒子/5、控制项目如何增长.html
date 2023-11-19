@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 600px;
+            height: 300px;
+            background-color: aqua;
+            display: flex;
+        }
+        .son {
+            width: 100px;
+            height: 300px;
+            border: 1px solid black;
+            box-sizing: border-box;
+        }
+        .box .son :nth-child(1) {
+            flex-grow: 1;
+        }
+        .box .son :nth-child(2) {
+            flex-grow: 2;
+        }
+        .box .son :nth-child(3) {
+            flex-grow: 3;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- 
+        2、控制项目如何增长
+        主轴方向空间有多余的时候，才能控制每个项目如何变大
+        父元素多余的空间，项目按照取值的占比，自动分配各自增长相应的尺寸flex-grow:
+        默认值不分配空间数字1234 ...
+     -->
+    <div class="box">
+        <div class="son">1项目如何增长（尺寸变大），是在父元素剩余空间的主轴方向变大。按剩余空间的比例</div>
+        <div class="son">2例如，本例中父元素宽为600pX，子元素宽100，一共3个，共占300，还剩300，
+            则以上方式把剩余部分分成6份，一份50 第一个盒子占一份增长50，那么第一个盒子总宽为150</div>
+        <div class="son">3</div>
+    </div>
+</body>
+
+</html>

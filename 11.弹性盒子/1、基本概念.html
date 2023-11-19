@@ -1,0 +1,124 @@
+弹性盒子是一种布局方式，主要解决某一个元素中的子元素的布局方式，子元素的大小排版顺序都受到父元素的影响和控制。
+给一个元素设置display: flex,这个元素的儿子们就变成了弹性布局
+二、弹性盒子的四个专有名词
+*弹性容器:设置了display: flex;的元素
+弹性项目:设置了display: flex;的元素的儿子们
+主轴:弹性项目的排列方向
+如果主轴是x轴，
+主轴的起点在左侧，主轴的终点在右侧；主轴的起点在右侧，主轴的终点在左侧
+如果主轴是y轴，
+主轴的起点在顶部，主轴的终点在底部；主轴的起点在底部，主轴的终点在顶部
+交叉轴:永远与主轴垂直的一个方向
+
+三、语法
+设置元素为弹性容器
+display: flex;//让块级元素变成容器
+display: inline-flex;//让行内元素变成容器（一般不用）
+1、添加给父元素的属性
+2、弹性容器只对子元素生效，与孙子无关，但是可以嵌套使用-语法
+3、默认值:项目主轴方向是水平从左到右排列
+4、项目的总宽度大于容器的总宽度的时候，会自动缩小以适应-子元素不受元素类型的影响，按照块元素处理
+5、弹性布局的目的，就是灵活的控制子元素的水平或者垂直对齐方向
+所以说当元素变成了容器之后，容器和项目所有的改变水平或者垂直对齐方式的属性会失去效果
+6、只有设置了display:flex,其他的容器属性和项目属性才能生效
+
+四、弹性盒子属性
+1.容器在主轴方向上空间不够的时候，项目是否换行:flex-wrap
+flex-wrap:nowrap //默认不换行
+flex-wrap:wrap //换行
+2.主轴方向:flex-direction
+flex-direction: row; //默认水平从左到右
+flex-direction: row-reverse; //水平从右到左
+flex-direction: column; //垂直从上到下
+flex-direction: column-reverse; //垂直从下到上
+3.换行和主轴方向的简写
+flex-flow: wrap column;
+4.设置项目在主轴上的排列方式
+justify-content: flex-start;默认主轴起点对齐
+justify-content: flex-end;主轴终点对齐
+justify-content: center;主轴中心对齐
+justify-content: space-around;容器两边有间隙
+justify-content: space-between;容器两边没有间隙
+5.设置项目在交叉轴上的排列方式
+align-items : stretch;默认拉伸以适应交叉轴的空间
+align-items : flex-start;交叉轴起点对齐
+align-items : flex-end;交叉轴终点对齐
+align-items : center;交叉轴中心对齐
+align-items : baseline;交叉轴基线对齐；了解
+6多行项目在交叉轴上的排列
+align-content: stretch;默认拉伸以适应交叉轴的空间
+align-content: flex-start;交叉轴起点对齐
+align-content: flex-end;交叉轴终点对齐
+align-content: center;交叉轴中心对齐
+align-content: space-around;容器两边有间隙
+align-content: space-between;容器两边没有间隙
+
+五、弹性项目(子元素)属性
+1、设置单个项目在交叉轴上的排列方式align-self:
+auto默认继承父元素的align-items的属性值，如果父元素没有设置align-items,就会找自己的align-self的默认值
+stretch：默认值拉伸项目在交叉轴方向上不设置尺寸的时候
+flex-start：交叉轴起点对齐
+flex-end：交叉轴终点对齐
+center：交叉轴中心对齐
+baseline：交叉轴基线对齐
+
+2、控制项目如何增长
+主轴方向空间有多余的时候，才能控制每个项目如何变大
+父元素多余的空间，项目按照取值的占比，自动分配各自增长相应的尺寸flex-grow:
+默认值不分配空间数字1234 ...
+
+3、控制项目如何收缩
+如果主轴方向上空间不足，项目们按照取值的占比，自动减少对应的尺寸
+flex-shrink :默认值分配空间收缩不分配空间不收缩数字1234...
+
+4、设置项目在主轴方向上的尺寸flex-basis:
+auto默认值:项目在主轴上没有设置flex-basis，会参考width;如果也没有设置width，靠内容撑开。
+px为单位的数字
+百分比参考父元素的宽高(一般不用)
+当尺寸和flex-basis冲突，以flex-basis为准
+
+5、项目属性的简写
+flex:flex-grow flex-shrink flex-basis
+-顺序不可以换
+-平分空间:flex: 1(这是最常用的简写)
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        ul {
+            width: 500px;
+            height: 200px;
+            border: 2px black solid;
+            /*变成弹性盒子*/
+            display: flex;
+        }
+
+        li {
+            list-style: none;
+            width: 100px;
+            height: 200px;
+            background-color: chartreuse;
+            border: 2px solid black;
+            box-sizing: border-box;
+        }
+    </style>
+
+</head>
+
+<body>
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+        <!--弹性盒子是设置了display:flex的盒子其子元素大小，排列，布局将受到弹性盒子父元素的影响。-->
+    </ul>
+</body>
+
+</html>

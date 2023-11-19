@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transition-timing-function属性</title>
+    <style type="text/css">
+    div{
+        width:424px;
+        height:406px;
+        margin:0 auto;
+        background:url(../images/HTML5.png) center center no-repeat;
+        border:5px solid #333;
+        border-radius:0px;	
+        }
+    div:hover{
+        border-radius:50%;
+        transition-property:border-radius;  /*指定动画过渡的CSS属性*/
+        transition-duration:4s;  /*指定动画过渡的时间*/
+        transition-timing-function:ease-in-out;  /*指定动画过以慢速开始和结束的过渡效果*/
+        transition-delay:0s;    /*指定动画延迟触发*/
+        }
+    </style>
+</head>
+<body>
+    <!-- transition-timing-function属性规定过渡效果的速度曲线。
+    语法格式：
+    transition-timing-function:linear|ease|ease-in|ease-out|ease-in-out|cubic-bezier(n,n,n,n);
+    linear:指定以相同速度开始至结束的过渡效果，等同于cubic-bezier(0,0,1,1)）
+    ease:指定以慢速开始，然后加快，最后慢慢结束的过渡效果，等同于cubic-bezier(0.25,0.1,0.25,1）
+    ease-in:指定以慢速开始，然后逐渐加快的过渡效果，等同于cubic-bezier(0.42,0,1,1）
+    ease-out:指定以慢速结束的过渡效果，等同于cubic-bezier(0,0,0.58,1）
+    ease-in-out:指定以慢速开始和结束的过渡效果，等同于cubic-bezier(0.42,0,0.58,1）
+    cubic-bezier(n,n,n,n):定义用于加速或者减速的贝塞尔曲线的形状，它们的值在0~1之间 -->
+
+<!-- 
+transition-delay属性规定过渡效果的开始时间。
+语法格式：
+transition-delay:time;
+默认值为0，常用单位是秒（s）或者毫秒（ms），属性值可以是正整数、负整数和0
+transition-delay为负数时，过渡动作会从该时间点开始，时间点之前的过渡动作不会显示；当transition-delay为正数时，过渡动作会延迟触发。
+ -->
+
+ <!-- 
+transition属性是一个复合属性，用于在一个属性中设置transition-property、transition-duration、transition-timing-function、
+transition-delay四个过渡属性。
+如：transition:border-radius 5s ease 2s;
+
+  -->
+
+
+
+
+
+
+
+    <div></div>
+</body>
+</html>
+    
+    
