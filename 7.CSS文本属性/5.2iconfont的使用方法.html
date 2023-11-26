@@ -5,13 +5,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>图标字体：本地下载引用</title>
-    <link rel="stylesheet" href="../iconfont/iconfont.css" type="text/css">
+    <!-- <link rel="stylesheet" href="../iconfont/iconfont.css" type="text/css"> -->
     <style>
-        /*图标颜色变为粉色*/
-        .p1 {
-            font-size: 100px!important;
-            color: pink;
+        @font-face {
+            font-family: 'iconfont';
+            src: url('../font/iconfont.ttf?t=1700984998145') format('truetype');
         }
+
+        .iconfont {
+            font-family: "iconfont" !important;
+            font-size: 50px;
+            font-style: normal;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        /*图标颜色变为粉色*/
+        /* .p1 {
+            font-size: 100px !important;
+            color: pink;
+        } */
+
     </style>
 
 </head>
@@ -21,9 +35,9 @@
     <!-- 1.下载图标（阿里巴巴图标库）： https://www.iconfont.cn/-->
 
     <!-- 引入各图标，iconfont为图标字体类名，必写-->
-    <span class="iconfont icon-shangchuan"></span>
+    <!-- <span class="iconfont icon-icon-test"></span> -->
     <!-- Unicode:转义字符引用  -->
-    <span class="iconfont p1">&#xe64d;</span>
+    <span class="iconfont">&#xe63b;</span>
 
 </body>
 

@@ -1,20 +1,17 @@
 @font-face {
-  font-family: "iconfont"; /* Project id 4316245 */
-  src: url('iconfont.woff2?t=1699144073091') format('woff2'),
-       url('iconfont.woff?t=1699144073091') format('woff'),
-       url('iconfont.ttf?t=1699144073091') format('truetype');
+  font-family: "iconfont"; /* Project id  */
+  src: url('../font/iconfont.ttf?t=1700984998145') format('truetype');
 }
-
 
 .iconfont {
   font-family: "iconfont" !important;
   font-size: 16px;
   font-style: normal;
-  -webkit-font-smoothing: antialiased;/*字体清除锯齿效果*/
-  -moz-osx-font-smoothing: grayscale;/* 字体显得更加平滑和清晰 */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-shangchuan:before {
-  content: "\e64d";
+.icon-icon-test:before {
+  content: "\e63b";
 }
 
