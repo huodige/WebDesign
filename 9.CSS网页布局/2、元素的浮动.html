@@ -1,12 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style type="text/css">
+        .father {
+            /*定义父元素的样式*/
+            background: #eee;
+            border: 1px dashed #ccc;
+        }
+
+        .box01,
+        .box02,
+        .box03 {
+            /*定义box01、box02、box03三个盒子的样式*/
+            height: 50px;
+            line-height: 50px;
+            background: #FF9;
+            border: 1px solid #93b7ff;
+            margin: 15px;
+            padding: 0px 10px;
+        }
+
+        p {
+            /*定义段落文本的样式*/
+            background: #c1d5ff;
+            border: 1px dashed #93b7ff;
+            margin: 15px;
+            padding: 0px 10px;
+        }
+    </style>
 </head>
+
 <body>
-    初学者在设计一个页面时，默认的排版方式是将页面中的标签从上到下一一罗列，此时页面参差不齐。
-    要使页面会变得整齐有序，这时就需要为标签设置浮动属性。
+    <!-- 初学者在设计一个页面时，默认的排版方式是将页面中的标签从上到下一一罗列，此时页面参差不齐。
+    要使页面会变得整齐有序，这时就需要为标签设置浮动属性。 -->
+    <div class="father">
+        <div class="box01">box01</div>
+        <div class="box02">box02</div>
+        <div class="box03">box03</div>
+        <p>在山东烟台，全球最大的海上钻井平台“蓝鲸2号”备受瞩目。这个海上“巨无霸”有37层楼高，其甲板有一个足球场那么大。它可以在水深超过3000米的海域作业，最大钻井深度15240米。“蓝鲸2号”生产经理程骋刚来这里时，大部分人都是洋面孔，如今绝大部分工作人员都是中国面孔，程聘感觉“有一股强大的中国力量在引领海工行业的发展”。
+        </p>
+    </div>
 </body>
+
 </html>

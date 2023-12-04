@@ -6,10 +6,13 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>使用overflow属性清除浮动</title>
 <style type="text/css"> 
-.father{                              /*没有给父元素定义高度*/
+.father{                              /*没有给父元素定义高度,浮动起来的div失去了div独占一行的特性，而清除浮动的父div仍然独占一行。*/
 	background:#ccc;
 	border:1px dashed #999; 
-	overflow:hidden;               /*对父元素应用overflow:hidden;*/
+	 /*对父元素应用overflow:hidden;*/
+	 /* height: 40px; */
+	overflow:hidden;             
+	/* overflow:hidden 的用法在隐藏溢出和清除浮动上主要针对父div是否有固定的高度加以区分。  */
 }
 .box01,.box02,.box03{
 	height:50px; 
@@ -31,6 +34,7 @@
 	<div class="box01">box01</div>
 	<div class="box02">box02</div>
 	<div class="box03">box03</div>
+	
 </div>
 </body>
 </html>
