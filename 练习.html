@@ -3,24 +3,46 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>盒子模型</title>
+    <title>Box Model</title>
     <style>
-        .box {
-            width: 200px;
-            height: 200px;
-            border-width: 10px;
-            border-color: red;
-            border-style: solid;
-            /* border: 10px solid red; */
-            padding: 10px;
-            margin: 20px;
+        .box1 {
+            width: 60%;
+            margin: auto;
+            background-color: #f0f0f0;
+            border: 2px solid black;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 20px;
+            color: black;
+            text-align: center;
+        }
+        .box2 {
+            width: 40%;
+            margin: auto;
+            background-color: #ddd;
+            border: 2px solid black;
+            padding: 20px;
+            text-align: center;
+        }
+        p {
+            font-size: 14px;
+            color: gray;
+            text-indent: 2px;
         }
     </style>
 </head>
 
 <body>
-    <div class="box">
-        <p>这是一个盒子模型</p>
+    <div class="box1">
+        <h2>Box 1</h2>
+        <p>This is box 1.</p>
+    </div>
+    <div class="box2">
+        <h2>Box 2</h2>
+        <p>This is box 2.</p>
     </div>
 </body>
 
