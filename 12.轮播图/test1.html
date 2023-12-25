@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			/* 使用*{margin: 0; padding: 0}可以简单方便的一次性重置所有HTML网页元素的浏览器样式，代码少，控制量大。 */
+			* {
+				margin: 0;
+				padding: 0;
+			}
+
+			/* 去除前面的黑色小点 */
+			ul,
+			li {
+				list-style: none;
+			}
+
+			img {
+				border: 0;
+			}
+
+			.wrapper {
+				width: 800px;
+				margin: 0 auto;
+				padding-bottom: 50px;
+			}
+
+			/* overflow：内容溢出元素框时的显示方式：属性可以控制内容溢出元素框时在对应的元素区间内添加滚动条。
+			hidden ：内容会被修剪，并且其余内容是不可见的。 */
+			#focus {
+				width: 800px;
+				height: 280px;
+				overflow:hidden;
+				position: relative;
+			}
+
+			#focus ul {
+				height: 380px;
+				position: absolute;
+			}
+
+			#focus ul li {
+				float: left;/* 浮动 */
+				/* 设置图片宽度 */
+				width: 800px;
+				/* 设置图片高度 */
+				height: 280px;
+				overflow: hidden;
+				/* 内容会被修剪，并且其余内容是不可见的 */
+				position: relative;
+				background: #000;
+			}
+
+			#focus ul li div {
+				position: absolute;
+				overflow: hidden;
+			}
+
+			#focus .preBtn {
+				width: 45px;
+				height: 100px;
+				left: 0;
+				top: 90px;
+				background: url(images/spirte.png) no-repeat 0 0;
+				/* 背景图片地址  背景平铺 背景图片位置 */
+				background-color: #000;
+				cursor: pointer;
+				opacity: 0.4;
+				filter: alpha(opacity=40);
+			}
+
+			#focus .nextBtn {
+				width: 45px;
+				height: 100px;
+				right: 0px;
+				top: 90px;
+				background: url(images/spirte.png) no-repeat right top;
+				/* background:bg-color bg-image position/bg-size bg-repeat bg-origin bg-clip bg-attachment initial|inherit; */
+				background-color: #000;
+				cursor: pointer;
+				/* 鼠标样式 */
+				opacity: 0.4;
+				/* 透明度 */
+				filter: alpha(opacity=40);
+				/* 滤镜 图片透明度*/
+			}
+		</style>
+		<script type="text/javascript">
+			/* 把图片地址存在数组中 */
+			var picsArr=new Array();
+			picsArr[0] = "images/01.jpg";
+			picsArr[1] = "images/02.jpg";
+			picsArr[2] = "images/03.jpg";
+			picsArr[3] = "images/04.jpg";
+			picsArr[4] = "images/05.jpg";
+			/* 定义变量 计时器 索引号*/
+			var timer, index = 0;
+			/* 加载 */
+			window.onload = showPic;//不要带括号
+			function showPic() {
+				document.getElementById("pic").src = picsArr[index];//显示图片
+				if (index < picsArr.length -1) {
+					index++;
+				} else {
+					index = 0; //如果index=4,index=0;从第一张图片开始轮播  
+				}
+				timer = setTimeout("showPic()", 2000);//每2秒轮播一张图片
+			}
+
+			function showPrePic() {
+				document.getElementById("pic").src = picsArr[index];
+				if (index > 0) {
+					index--;
+				} else {
+					index = 4;
+				}
+				timer = setTimeout("showPic()", 2000);//定时器
+			}
+
+			function showPre() {
+				clearTimeout(timer);
+				showPrePic();
+			}
+
+			function showNext() {
+				clearTimeout(timer);
+				showPic();
+			}
+		</script>
+	</head>
+	<body>
+		<!-- 设计网页 -->
+		<div class="wrapper">
+			<div id="focus">
+				<ul>
+					<li>
+						<a href="#" target="_blank"><img src="images/01.jpg" alt="图片显示出错时显示该文字" id="pic"/></a>
+						<div class="preBtn" onclick="showPre()"></div>
+						<div class="nextBtn" onclick="showNext()"></div>
+					</li>
+				</ul>
+			</div>
+		</div>
+		
+	</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>  
+/* 1、ul：清除内外边距；清除前面的项目符号；背景颜色为#693；宽度为1000px；高度为40px；上下外边距为50px且居中；
+左内边距为55px且整体宽度不变；文字垂直居中（行高等于高度）
+2、li：列表左浮动
+3、链接标签a:字体颜色为#fff，清除下划线，行内元素转化为块元素，左右内边距为25px，上下内边距为0；
+4、鼠标移动到a标签，背景颜色变为黑色#000
+5、菜单“首页”背景为黑色#000 */
+        ul {
+            /*清除内外边距 */
+            margin: 0;
+            padding: 0;
+            /* 清除前面的项目符号 */
+            list-style: none;
+            background-color: #693;
+            width: 1000px;
+            /* 居中 */
+            margin: 50px auto;
+            height: 40px;
+            /* 高度等于行高就垂直居中 */
+            line-height: 40px;
+            /* 菜单整体右移 */
+            padding-left: 55px;
+            /* 不想让ul整体宽度变宽 */
+            box-sizing: border-box;
+        }
+        ul li {
+            float: left;
+        }
+        ul li a {
+            color: #fff;
+            /* 去除a标签下划线 */
+            text-decoration: none;
+            /* 转化为块元素 */
+            display: block;
+            /* 菜单文字分开 */
+            padding: 0 25px;
+        }
+        ul li a:hover {
+            /* 鼠标悬停在一级菜单时，背景颜色变为黑色 */
+            background-color: #000;
+        }
+        ul .first a {
+            /* 第一个一级菜单背景为黑色 */
+            background-color: #000;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <ul id="nav">
+        <li class="first"><a href="#">首页</a></1i>
+        <li><a href="#">关于我们</a></1i>
+        <li><a href="#">新闻中心</a></li>
+        <li><a href="#">会员风采</a></1i>
+        <li><a href="#">会员服务</a></1i>
+        <li><a href="#">项目合作</a></1i>
+        <li><a href="#">文化长廊</a></1i>
+        <li><a href="#">加入商会</a></1i>
+            </u1>
+</body>
+
+</html>

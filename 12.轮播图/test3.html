@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>nicedesign奈思设计-pc端</title>
+<link rel="stylesheet" type="text/css" href="css/swiper.css">
+<script src="js/swiper.min.js"></script>
+</head>
+<body>
+
+<div class="swiper-container">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="images/banner1.jpg"></div>
+        <div class="swiper-slide"><img src="images/banner2.jpg"></div>
+    </div>
+    <!-- 如果需要分页器 -->
+    <div class="swiper-pagination"></div>  
+</div>
+<script>        
+  var mySwiper = new Swiper ('.swiper-container', {
+loop: true,    // 循环模式选项
+autoplay: {
+    delay: 3000,
+    stopOnLastSlide: false,
+    disableOnInteraction: false,
+    },
+    // 如果需要分页器
+    pagination: {
+      el: '.swiper-pagination',
+	clickable :true,
+    },  
+  })  
+
+//鼠标滑过pagination控制swiper切换
+for(i=0;i<mySwiper.pagination.bullets.length;i++){
+  mySwiper.pagination.bullets[i].index=i
+  mySwiper.pagination.bullets[i].onmouseover=function(){
+    mySwiper.slideTo(this.index);
+  };
+}
+//如果你开启了clickable，还可以这样  
+for(i=0;i<mySwiper.pagination.bullets.length;i++){
+  mySwiper.pagination.bullets[i].onmouseover=function(){
+    this.click();
+  };
+}       
+</script>
+
+</body>
+</html>
